@@ -48,14 +48,26 @@ We focus on:
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/SwarmDrop">SwarmDrop</a></h3>
-      <p>A decentralized file transfer app for sending files across networks.</p>
+      <p>A decentralized, cross-network peer-to-peer file transfer app.</p>
       <ul>
-        <li>No account</li>
-        <li>No cloud dependency</li>
-        <li>End-to-end encrypted transfer</li>
-        <li>Direct device-to-device delivery</li>
+        <li>No account, no cloud</li>
+        <li>End-to-end encrypted (XChaCha20-Poly1305)</li>
+        <li>mDNS + DHT + DCUtR auto path selection</li>
+        <li>Tauri desktop (Windows / macOS / Linux)</li>
       </ul>
     </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/swarm-apps/SwarmDrop-RN">SwarmDrop-RN</a></h3>
+      <p>The mobile companion for SwarmDrop, sharing the same Rust core as the desktop.</p>
+      <ul>
+        <li>Cross-platform pairing with the desktop app</li>
+        <li>Core reused via uniffi-bindgen-react-native</li>
+        <li>Direct save to Android SAF / system folders</li>
+        <li>Expo + React Native</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/swarm-p2p">swarm-p2p</a></h3>
       <p>The reusable networking foundation behind the apps.</p>
@@ -66,8 +78,6 @@ We focus on:
         <li>Request-response APIs for app protocols</li>
       </ul>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/swarmnote-editor">swarmnote-editor</a></h3>
       <p>A CodeMirror 6 based Markdown editor extracted from SwarmNote.</p>
@@ -76,15 +86,6 @@ We focus on:
         <li>Live preview interactions</li>
         <li>Cross-platform editor core</li>
         <li>Moving toward a reusable OSS editor package</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>More coming</h3>
-      <p>The ecosystem is still evolving across apps, editor runtime, and networking infrastructure.</p>
-      <ul>
-        <li>Apps</li>
-        <li>Shared runtime</li>
-        <li>Open infrastructure</li>
       </ul>
     </td>
   </tr>

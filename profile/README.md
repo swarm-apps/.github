@@ -48,14 +48,26 @@
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/SwarmDrop">SwarmDrop</a></h3>
-      <p>一个去中心化的跨网络文件传输应用。</p>
+      <p>一个去中心化、跨网络的点对点文件传输应用。</p>
       <ul>
-        <li>无需账号</li>
-        <li>无需云端依赖</li>
-        <li>端到端加密传输</li>
-        <li>面向设备到设备直连传输</li>
+        <li>无需账号、无需云端</li>
+        <li>端到端加密（XChaCha20-Poly1305）</li>
+        <li>mDNS + DHT + DCUtR 自动选路</li>
+        <li>Tauri 桌面端（Windows / macOS / Linux）</li>
       </ul>
     </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/swarm-apps/SwarmDrop-RN">SwarmDrop-RN</a></h3>
+      <p>SwarmDrop 的移动端伙伴，与桌面端共享同一份 Rust core。</p>
+      <ul>
+        <li>与桌面端跨平台配对传输</li>
+        <li>通过 uniffi-bindgen-react-native 复用核心</li>
+        <li>Android SAF / 系统目录直存</li>
+        <li>Expo + React Native</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/swarm-p2p">swarm-p2p</a></h3>
       <p>这些应用背后的可复用 P2P 网络基础层。</p>
@@ -66,8 +78,6 @@
         <li>面向应用协议的请求响应 API</li>
       </ul>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/swarm-apps/swarmnote-editor">swarmnote-editor</a></h3>
       <p>从 SwarmNote 中抽离出来、基于 CodeMirror 6 的 Markdown 编辑器。</p>
@@ -76,15 +86,6 @@
         <li>Live Preview 交互</li>
         <li>面向桌面与移动宿主的跨平台编辑器核心</li>
         <li>正在演进为可复用开源编辑器包</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>More coming</h3>
-      <p>这个生态仍在持续演进，覆盖应用层、编辑器运行时和网络基础设施。</p>
-      <ul>
-        <li>应用</li>
-        <li>共享运行时</li>
-        <li>开放基础设施</li>
       </ul>
     </td>
   </tr>
